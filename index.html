@@ -1,15 +1,123 @@
+﻿<!doctype html>
 <html>
-<body>
 
+ <head>
+ <link rel="stylesheet" type = "text/css" href="CSS.css">
+ </head>
+ 
+ <body>
 
-<p>
-<font color = "red">
-नमस्कार  ।
-</font>
-Vipul Harsh's Website is still under construction. Please bear with the system. In the meanwhile, go vote. 
-</p>
+  <ul>
+	<li><a href=#home class=b>Home</a></li>
+	<li><a href=#about class=b>About</a></li>
+	<li><a href=#resume class=b>Resume</a></li>
+	<li><a href=#works class=b>Works</a>  </li>
+	<li><a href=#contact class=b>Contact</a></li>
+	<li><a href=#links class=b>Links</a></li>	
+  </ul>
 
+  <div id="section">
 
-</body>
+   <section id="home"> 
+	<h1>
+	सर्वद्रव्येषु विद्यैव द्रव्यमाहुरनुत्तमम् ।<br>
+	अहार्यत्वादनर्ध्यत्वादक्षयत्वाच्च सर्वदा ॥ <br>
+	</h1>
+	</section>
 
+   <section id="about">
+	<h2>About Me</h2>
+	<p>
+	नमस्कार! <br>
+	I am Vipul Harsh, a final year undergraduate in the department of Computer Science and Engineering, Indian Institute of Technology, Bombay. 
+	I was born in Patna, India - the land of Buddha and Mahavira. 
+	Among the things that I am interested in are Programming, Mathematics, Studying, Squash, Table Tennis and Reading.
+	I have a special liking for High Performance Computing, Parallel Programming, Cryptography and Theoretical Computer Science. 
+	I have liked Mathematics since childhood. Recently, I have also developed an interest for Competitive Programming.
+	</p>
+   </section>
+
+   <section id="resume">
+	<h2>Resume</h2>
+	<p>
+	Download my CV here:<br><br>
+	<a href="cv.pdf" target="_blank"><img src="pdf.jpg"></a>
+	</p>
+   </section>
+
+   <section id="works">
+	<h2>My Works</h2>
+	
+	<h4> Lattice Based Side Channel Attacks on DSA </h4>
+	<h4> <i>Guide : Prof. Bernard Menezes </i></h4>
+	<p>
+		Worked on a cache based Lattice Attack on the Digital Signature Algorithm. 
+		Experimented with various parameters viz. the number of signed messages that one has, the
+		number of bits known before the attack in each temporary key, the imprecision of the 		   
+		information available beforehand, among others to figure out the most suitable one for the attack. 
+		<a href="http://www.cse.iitb.ac.in/~vipulharsh/projectReports/btp.pdf" class=c>[Report]</a>
+	</p>
+	<hr>
+	
+	<h4> A Fast Multipole method for the RPY tensor for polydisperse particle systems </h4>
+	<h4> <i>Guide : Prof. Edmond Chow </i></h4>
+	<p>
+		Came up with two fast methods for doing large scale simulations for polydisperse particle systems 
+		involving hydrodynamic interactions and RPY tensor.	
+		Extended the 4 call method for polydisperse systems to 5 calls to the harmonic FMM.
+		Used the parallel version of the Kernel Independent FMM to run the simulations with multiple cores 
+		and achieved a decent speedup.
+		<a href="https://github.com/roynalnaruto/FMM_RPY_BROWNIAN" class=c>[Code]</a>&nbsp 
+		<a href="https://speakerdeck.com/vipulharsh/georgia-tech-intern" class=c>[Report]</a>
+	</p>
+	<hr>
+	
+	
+	<h4> Revisiting the Karp and Miller Algorithm </h4>
+	<h4> <i>Guide : Prof. Jerome Leroux, Prof. Gregoire Sutre</i></h4>
+	<p>
+		Researched on the Karp and Miller algorithm to compute the coverability set of a Petri
+		Net and other improvements namely the MP algorithm and the buggy Finkel algorithm.
+		Built a tool that implements the above mentioned algorithms. 	
+		<a href="https://github.com/vipulharsh/KM_tree" class=c>[Code]</a>&nbsp 
+	</p>
+   </section>
+
+   <section id="contact">
+	<h2>Contact Me</h2>
+	<p>
+	Address 1&nbsp&nbsp : Room No.-310, Hostel 3, IIT Bombay, Powai, Mumbai - 400076<br> 
+	Address 2&nbsp&nbsp : Qr. No.-1010, Sector-12, R.K.Puram, New Delhi - 110022<br>
+	Email ID&nbsp&nbsp&nbsp&nbsp&nbsp: vipulharsh@cse.iitb.ac.in <br>
+	Contact No.&nbsp: +91 - 9869056996<br><br><br>
+	You can also find me on:<br>
+	<a href="https://www.facebook.com/LIFErocksss"><img src="facebook.png"></a>
+	<a href="https://twitter.com/vipulharsh93"><img src="twitter.png"></a>
+	</p>
+   </section>
+
+  <section id="links">
+	<h2> Links </h2>
+	<p>
+	Speaker Deck Profile : <a href="https://speakerdeck.com/vipulharsh"><img src="speakerdeck.jpg"></a>
+	</p>
+	<p>
+	Codechef Profile : <a href="http://www.codechef.com/users/vipulharsh"><img src="codechef.jpg"></a>
+	</p>
+	<p>
+	Github Profile : <a href="https://github.com/vipulharsh"><img src="github.jpg"></a>
+	</p>
+	<p>
+	Linkedin Profile : <a href="https://in.linkedin.com/pub/vipul-harsh/49/654/10b"><img src="linkedin.png"></a>
+	</p>
+  </section>
+	
+
+  </div>
+
+  <div id="footer">
+	Copyright © Harshita Prabha
+  </div>
+
+ </body>
 </html>
