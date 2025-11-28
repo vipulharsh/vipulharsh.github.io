@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{VIPUL HARSH} % Your name
+\address{web.engr.illinois.edu/$\sim$vharsh2} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{+1 217 751 2907 $\bullet$ vharsh2@illinois.edu}  % Your phone number and email
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Masters, Computer Science} \hfill {August 2015 - May 2017 (Expected)}
+\\ 
+University of Illinois at Urbana-Champaign (3.81/4)
+
+{\bf B.Tech. (Hons.), Computer Science} \hfill {July 2011 - May 2015}
+\\ 
+Indian Institute of Technology, Bombay (9.18/10)
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+
+\begin{rSubsection}{Collective Operations in charm}{March 2016 - Present}{}{} 
+\item Working on improving communication latencies for collective operations (like gather, scatter) in charm. 
+\item Improving multicast functionalities in charm for MPI like sub-communicator sections 
+ 
+\end{rSubsection} 
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{Preventing Overfitting in Machine Learning Classifiers}{Fall 2015}{}{}
+\item Explored the properties of Dropout by modifying the training algorithm and analyzed change in performance
+\item Also extended Dropout method for neural networks to other learning classifiers like Perceptron and Support Vector Machines
+\end{rSubsection}
+
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{Improving communication latencies in charm++ using onesided operations }{March 2016 - Present}{}{}
+\item Worked on reducing message sending times for charm by having an API that avoids copies for large messages
+\item Achieved upto $37\%$ improvement for large messages on BG/Q machines
+\end{rSubsection}
+
+
+
+\begin{rSubsection}{Parallel version of Floyd Washell algorithm for finding all pair shortest paths in a graph}{Fall 2015}{}{}
+\item Analysed and argued the extent of parallelisation possible in the algorithm
+\item Predicted performance models and isoefficiency functions for different agglomeration schemes and compared them with experiments on a cluster
+\end{rSubsection}
+
+
+
+
+
+\end{rSection} 
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience} \itemsep -3pt  
+
+{Graduate Research Assistant, Parallel Programming Lab (PPL) , UIUC.} \hfill August 2015 - present \\ 
+{Summer Research Intern, Georgia Tech.} \hfill May 2014 - July 2014\\
+{Research Internship, LaBRI, France
+} \hfill May 2013 - July 2013 \\
+\end{rSection} 
+
+
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Achievements} \itemsep -1pt {} 
+\vspace{-0.4 cm}
+\begin{rSubsection}{}{}{}{}  
+\item All India Rank $49$ in IIT-JEE $2011$, among $500,000$ candidates
+\item Represented IIT Bombay at the prestigious ACM ICPC World Finals 2015. Highest ranked team from India
+\item Rank $1$ in $3^{rd}$ International Mathematics Olympiad, $2009$ conducted
+by Science Olympiad Foundation
+\item Certified as among Top $1\%$
+($300$ students) in India, to appear for the following
+Indian National Olympiads: Maths (INMO) $2011$; Astronomy (INAO) $2009$, $2011$
+ \end{rSubsection}
+\end{rSection}
+
+
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming & C, C++, Java, Python, MPI, Matlab, Charm++\\ 
+Scripting & Bash, Slurm, pyplot, HTML \\  
+Miscellaneous &  $\LaTeX$, Scheme, Prolog \\
+\end{tabular}
+
+\end{rSection}
+
+
+
+
+
+\end{document}

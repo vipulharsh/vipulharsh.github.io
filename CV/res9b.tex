@@ -1,0 +1,125 @@
+% LaTeX resume using res.cls
+\documentclass[centered,margin,8pt]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref} 
+\usepackage{graphicx}
+\hypersetup{colorlinks,breaklinks,
+            urlcolor=[rgb]{0.25390625,  0.19921875,  0.515625}}
+
+%\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\sbullet}{\mbox{\footnotesize $\bullet$}}
+
+\begin{document}
+
+\name{Vipul Harsh}
+% \address used twice to have two lines of address
+\address{Department of Computer Science\\ University of Illinois at Urbana-Champaign\\ Urbana, IL - 61801}
+\address{{\sl Phone: }(217) 751-2907\\ {\sl Email: }vharsh2@illinois.edu \\ {\sl URL: }\href{vharsh2.web.engr.illinois.edu}{vharsh2.web.engr.illinois.edu}}
+
+ 
+\begin{resume}
+ 
+\section{Interests}   Parallel Computing, Systems 
+ 
+ 
+\section{Education} Masters, Computer Science \\
+                % \sl will be bold italic in New Century Schoolbook (or
+	        % any postscript font) and just slanted in
+		% Computer Modern (default) font
+                University of Illinois at Urbana-Champaign, 
+                May 2017 (Expected) \\
+                GPA: 3.81/4
+
+                B.Tech. (Honors), Computer Science and Engineering\\
+                % \sl will be bold italic in New Century Schoolbook (or
+            % any postscript font) and just slanted in
+        % Computer Modern (default) font
+                Indian Institute of Technology, Bombay, 
+                May 2015 \\
+                GPA: 9.16/10
+ 
+
+\section{Research Experience} {\sl Graduate Research Project, UIUC} \hfill  {\sl  March 2016 - Present} \\
+                {\sl Parallel Sorting using data partitioning}~\hfill  \href{http://charm.cs.illinois.edu/~kale/}{Prof. Laxmikant Kale} \\ 
+                Designed an algorithm that provably ensures arbitrary good load balance with one round of histogramming, with an $O(p\log p)$ size histogram. The algorithm is independent of the initial distribution of keys as long as the input does not have too many duplicates. Proposed an efficient way to deal with too many duplicates without blowing up the input size.
+                 Implemented node-level optimisations to the algorithm, taking advantage of shared memory programming to make it more scalable on large clusters.
+
+                {\sl Graduate Research Project, UIUC} \hfill {\sl          March 2016 - Present}\\
+                {\sl Collective Operations in charm}~\hfill  \href{http://charm.cs.illinois.edu/~kale/}{Prof. Laxmikant Kale}\\ 
+                Working on improving communication latencies for collective operations (like gather, scatter) in \href{http://charm.cs.illinois.edu/}{charm}. 
+                Improving multicast functionalities in charm for MPI like sub-communicator sections.
+                
+
+
+                {\sl Research Internship, Georgia Tech} \hfill       {\sl  Summer 2014}\\
+                {\sl Fast Multipole method for RPY tensor }~\hfill \href{http://www.cc.gatech.edu/~echow/}{Prof. Edmond Chow}\\ 
+                Developed two methods for doing large scale simulations for polydisperse particle systems involving hydrodynamic interactions and RPY tensor. Extended the 4 call method for polydisperse systems involving 5 calls to the harmonic FMM. Used the Kernel Independent FMM method to run simulations on multiple cores and achieved $\sim$6x speedup with 24 cores.
+
+
+                {\sl Research Internship, LaBRI, France} \hfill       {\sl  Summer 2013}\\
+                {\sl Revisiting the Karp and Miller Algorithm }~\hfill \href{http://www.labri.fr/perso/leroux/}{Prof. Jerome Leroux}, \href{http://www.labri.fr/perso/sutre/}{Prof. Gregoire Sutre}\\ 
+                Researched on the Karp and Miller algorithm to compute the coverability set of a Petri
+Net and other improvements namely the MP algorithm and the buggy Finkel algorithm. Built a tool that implements the aforementioned algorithms.
+
+
+
+\section{Achievments} 
+            $\sbullet$ Represented IIT Bombay at the ACM ICPC World Finals 2015. Highest ranked team from India \\
+            $\sbullet$ All India Rank $49$ in IIT-JEE $2011$, among $500,000$ candidates \\
+            $\sbullet$ Rank $1$ in $3^{rd}$ International Mathematics Olympiad, $2009$ conducted
+            by Science Olympiad Foundation \\
+            $\sbullet$ Awarded A+ grades in courses: Algorithms (UIUC), Machine Learning (UIUC), Numerical Analysis (IITB) and Differential Equations (IITB) \\
+            $\sbullet$ Certified as among Top $1\%$
+            ($300$ students) in India, to appear for the following
+            Indian National Olympiads: Maths (INMO) $2011$; Astronomy (INAO) $2009$, $2011$ 
+
+
+
+\section{Other\\ Projects}
+
+                {\sl Improving communication latencies in charm++ using RDMA operations }  \hfill         {\sl March 2016 - Present}\\
+                {\sl Guide:} \href{http://charm.cs.illinois.edu/~kale/}{Prof. Laxmikant Kale}\\
+                Worked on reducing message sending times for \href{http://charm.cs.illinois.edu/}{charm} by having an API that avoids copies for large messages using RDMA onesided operations provided by the underlying network. Achieved upto 37\% improvement for large messages on BG/Q machines.
+
+                {\sl Preventing Overfitting in Machine Learning Classifiers} \hfill         {\sl Fall 2015}\\
+                {\sl Guide:} \href{http://l2r.cs.uiuc.edu/}{Prof. Dan Roth }\\
+                Explored the properties of Dropout by modifying the training algorithm and analyzed change in performance.
+                Extended the Dropout method for neural networks to other learning classifiers like Perceptron and Support Vector Machines.
+                
+                {\sl Virtual Memory for Experimental OS} \hfill         {\sl Spring 2014}\\
+                {\sl Guide:} \href{https://www.cse.iitb.ac.in/~dmd/}{Prof. Dhananjay M. Dhamdhere }\\
+                Designed and implemented effective data structures and algorithms for handling process memory allocation, swap space management, with process swap in and out for Pranali, a virtual OS built on top of Linux. 
+
+
+
+                {\sl Comparison of binary exchange and transpose algorithms for FFT } \hfill         {\sl Spring 2016}\\
+                {\sl Guide:} \href{http://snir.cs.illinois.edu/}{Prof. Marc Snir}\\
+                Implemented two algorithms: the binary exchange and the transpose algorithm for performing FFT in parallel. Came up with performance models for both and compared them with experimental results. Also compared performance with fftw library.
+                             
+
+%                \end{itemize}
+
+
+
+
+\section{Teaching}
+
+$\sbullet$  Teaching Assistant for the course Discrete Mathematics for Autumn Semester, 2013, IIT Bombay  \\
+$\sbullet$ Guided over 300 students in a 3 day long hands-on GPU Programming and Applications Workshop (GPA) conducted by NVIDIA in association with CUDA Center of Excellence, IIT Bombay
+
+\section{Technical \\ Skills} 
+               {\sl Programming:} C, C++, Java, Python, MPI, Matlab, Charm++\\
+               {\sl Scripting:} Bash, Slurm, Matplotlib, HTML \\  
+               {\sl Miscellaneous:}  $\LaTeX$, Scheme, Prolog
+  
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
