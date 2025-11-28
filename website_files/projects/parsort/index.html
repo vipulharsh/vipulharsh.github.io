@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="author" content=""> -->
+
+    <title>Vipul Harsh</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+
+  <body>
+
+
+
+    <div class="container">
+
+    <div class="container">
+
+<h1> Histogramming based large scale parallel sorting algorithm </h1>
+
+We design a new large scale parallel sorting algorithm that combines sampling and histogramming. We prove sound guarantees about the algorithm and also show that it is essentially optimal in a sense. We implement it in a highly parallel astronomical application and show runtime benefits from our algorithm.
+
+
+<ul>
+ <li> <a href="https://arxiv.org/pdf/2204.04599.pdf"> Optimal Round and Sample-Size Complexity for Partitioning in Parallel Sorting</a>   </li>
+<font>Wentao Yang*, Vipul Harsh*, Edgar Solomonik. </font><br>
+<font>  Symposium on Parallelism in Algorithms and Architectures (SPAA), June 2023.  </font>
+
+<br> <br>
+
+ <li> <a href="../../papers/hss.pdf"> Histogram Sort with Sampling</a> (<a href="../../projects/hss_slides.pdf">slides</a>,  <a href="https://github.com/vipulharsh/HSS"> code</a>)  </li>
+<font>Vipul Harsh, Laxmikant Kale, Edgar Solomonik. </font><br>
+<font>  Symposium on Parallelism in Algorithms and Architectures (SPAA), June 2019.  </font>
+
+<br> <br>
+
+ <li>  <a href="../../papers/master_thesis.pdf">Histogram Sort with Sampling </a>   </li>
+<font>Vipul Harsh</font><br>
+<font>  M.S. thesis, May 2017.  </font>
+
+</ul>
+<!--              
+HSS is an scalable and robust large scale parallel sorting algorithm. HSS has sound theoretical guarantees. By characterizing HSS, we also establish the theoretical soundness of histogramming as a technique, which has been known to be effective in practice. Our implementation of HSS is robust to the underlying distribution and duplicate keys in the input. Infact, HSS is largely impervious to the input distribution. In our experiments with different input distributions, we hardly observed any noticeable difference. 
+We also deployed HSS on ChaNGa, a massively parallel astronomical application, thereby demonstrating the effectiveness of HSS on a real application.
+-->
+
+<!--
+	Parallel sorting is widely used as a routine kernel in several HPC and big data applications. Algorithms like Sample sort and Histogram sort rely on data partitioning techniques to distribute keys across processors. One major challenge of data partitioning is to achieve good load balance across processors. This is crucial since even one loaded processor slows down the entire application. 
+<br>
+Our algorithm borrows ideas from both Sample sort and Histogram sort, but determines all the splitters with one round of histogramming with very high probability, albeit with a <i> O(p log p) </i> sized histogram. Our algorithm provably achieves arbitrary levels of load balance, fed as a parameter to the algorithm. Furthermore, our algorithm does not assume anything about the initial distribution of keys. Our experiments are on large modern clusters, we exploit shared memory paradigm (SMP) to make our algorithm faster and more scalable.
+          </li>
+
+	<li>
+<div>
+<div style="float:middle;">	
+<figure>
+    	<img  src="hyk_vs_hss.png" height="280" width="380"/>
+	<figcaption> HSS beats HykSort, a state of the art sorting algorithm </figcaption>
+</figure>
+</div>
+<div style="float:centre;">
+<figure>
+    	<img  src="diff_dist.png" height="280" width="380"/>
+	<figcaption> HSS for different input distributions </figcaption>
+</figure>
+</div>
+<div style="float:centre;">
+<figure>
+    	<img  src="changa-HSS.png" height="280" width="380"/>
+	<figcaption> HSS for Changa, old is Histogram sort </figcaption>
+</figure>
+</div>
+</div>
+	</li>
+
+	<br> <br> 
+	<br> <br> 
+
+
+        </ul>
+
+    </div> 
+    </div> 
+-->
+  </body>
+</html>
