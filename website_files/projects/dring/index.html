@@ -55,53 +55,10 @@ Small-scale datacenters are far more numerous than large-scale DCs yet almost al
 	<font> Anchengcheng Zhou, Vipul Harsh, Sangeetha A. Jyothi, Maria Apostolaki, Brighten Godfrey. </font><br>
 	<font> USENIX NSDI, May 2026.  </font>
 	<br> <br>
-	<li> <a href="website_files/papers/dring.pdf"> Spineless Data centers</a> <br>
+	<li> <a href="../..//papers/dring.pdf"> Spineless Data centers</a> <br>
 	<font>Vipul Harsh, Sangeetha Abdu Jyothi, Brighten Godfrey. </font><br>
 	<font> ACM HotNets, November 2020.  </font>
 <br> <br>
 </ul>
-<!--              
-HSS is an scalable and robust large scale parallel sorting algorithm. HSS has sound theoretical guarantees. By characterizing HSS, we also establish the theoretical soundness of histogramming as a technique, which has been known to be effective in practice. Our implementation of HSS is robust to the underlying distribution and duplicate keys in the input. Infact, HSS is largely impervious to the input distribution. In our experiments with different input distributions, we hardly observed any noticeable difference. 
-We also deployed HSS on ChaNGa, a massively parallel astronomical application, thereby demonstrating the effectiveness of HSS on a real application.
--->
-
-<!--
-	Parallel sorting is widely used as a routine kernel in several HPC and big data applications. Algorithms like Sample sort and Histogram sort rely on data partitioning techniques to distribute keys across processors. One major challenge of data partitioning is to achieve good load balance across processors. This is crucial since even one loaded processor slows down the entire application. 
-<br>
-Our algorithm borrows ideas from both Sample sort and Histogram sort, but determines all the splitters with one round of histogramming with very high probability, albeit with a <i> O(p log p) </i> sized histogram. Our algorithm provably achieves arbitrary levels of load balance, fed as a parameter to the algorithm. Furthermore, our algorithm does not assume anything about the initial distribution of keys. Our experiments are on large modern clusters, we exploit shared memory paradigm (SMP) to make our algorithm faster and more scalable.
-          </li>
-
-	<li>
-<div>
-<div style="float:middle;">	
-<figure>
-    	<img  src="hyk_vs_hss.png" height="280" width="380"/>
-	<figcaption> HSS beats HykSort, a state of the art sorting algorithm </figcaption>
-</figure>
-</div>
-<div style="float:centre;">
-<figure>
-    	<img  src="diff_dist.png" height="280" width="380"/>
-	<figcaption> HSS for different input distributions </figcaption>
-</figure>
-</div>
-<div style="float:centre;">
-<figure>
-    	<img  src="changa-HSS.png" height="280" width="380"/>
-	<figcaption> HSS for Changa, old is Histogram sort </figcaption>
-</figure>
-</div>
-</div>
-	</li>
-
-	<br> <br> 
-	<br> <br> 
-
-
-        </ul>
-
-    </div> 
-    </div> 
--->
   </body>
 </html>
