@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="author" content=""> -->
+
+    <title>Vipul Harsh</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+
+  <body>
+
+
+
+    <div class="container">
+
+    <div class="container">
+<h1> Topology design for small-scale datacenters (DCs) </h1>
+
+<img hspace="2" src="dring_supergraph.png" height="150" width="150" style="display: block; margin-left: auto; margin-right: auto; width: 150px; margin-top: 5px; margin-bottom: 15px; " />
+
+Small-scale datacenters are far more numerous than large-scale DCs yet almost all research has gone into designing better topologies for the hyperscale DCs. We discovered that topology design is a fundamentally different problem at small-scale with different factors at play. Specifically, the asymptotic characteristics as size &rarr; &infin; are not relevant. We discovered small-scale topologies with bisection bandwidth O(n) worse asymptotically that outperform existing leaf-spine topologies across diverse workloads!
+
+
+<h4> People </h4>
+<ul>
+<li> Anchengcheng Zhou </li>
+<li> Vipul Harsh </li>
+<li> Sangeetha A. Jyothi </li>
+<li> Maria Apostolaki </li>
+<li> Brighten Godfrey </li>
+</ul>
+
+
+<br>
+<h4> Resources </h4>
+<ul>
+<li><font> <a href="https://www.youtube.com/watch?v=gkz-A9BDlqU&t=14249s">Talk</a> at <a href="https://conferences.sigcomm.org/hotnets/2020/">HotNets</a> </font> </li> 
+<li> <a href="https://onug.net/events/spinelessness-the-future-of-data-center-networks/">Talk</a> at ONUG </li>
+<li> <a href="../dring_slides.pdf">Slides</a> from the Hotnets talk </li>
+<li> <a href="https://github.com/netarch/DRing">Code</a></li> </font> </li> 
+</ul>
+
+<br>
+<h4> Publications </h4>
+<ul>
+	<li> Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers</li>
+	<font> Anchengcheng Zhou, Vipul Harsh, Sangeetha A. Jyothi, Maria Apostolaki, Brighten Godfrey. </font><br>
+	<font> USENIX NSDI, May 2026.  </font>
+	<br> <br>
+	<li> <a href="website_files/papers/dring.pdf"> Spineless Data centers</a> <br>
+	<font>Vipul Harsh, Sangeetha Abdu Jyothi, Brighten Godfrey. </font><br>
+	<font> ACM HotNets, November 2020.  </font>
+<br> <br>
+</ul>
+<!--              
+HSS is an scalable and robust large scale parallel sorting algorithm. HSS has sound theoretical guarantees. By characterizing HSS, we also establish the theoretical soundness of histogramming as a technique, which has been known to be effective in practice. Our implementation of HSS is robust to the underlying distribution and duplicate keys in the input. Infact, HSS is largely impervious to the input distribution. In our experiments with different input distributions, we hardly observed any noticeable difference. 
+We also deployed HSS on ChaNGa, a massively parallel astronomical application, thereby demonstrating the effectiveness of HSS on a real application.
+-->
+
+<!--
+	Parallel sorting is widely used as a routine kernel in several HPC and big data applications. Algorithms like Sample sort and Histogram sort rely on data partitioning techniques to distribute keys across processors. One major challenge of data partitioning is to achieve good load balance across processors. This is crucial since even one loaded processor slows down the entire application. 
+<br>
+Our algorithm borrows ideas from both Sample sort and Histogram sort, but determines all the splitters with one round of histogramming with very high probability, albeit with a <i> O(p log p) </i> sized histogram. Our algorithm provably achieves arbitrary levels of load balance, fed as a parameter to the algorithm. Furthermore, our algorithm does not assume anything about the initial distribution of keys. Our experiments are on large modern clusters, we exploit shared memory paradigm (SMP) to make our algorithm faster and more scalable.
+          </li>
+
+	<li>
+<div>
+<div style="float:middle;">	
+<figure>
+    	<img  src="hyk_vs_hss.png" height="280" width="380"/>
+	<figcaption> HSS beats HykSort, a state of the art sorting algorithm </figcaption>
+</figure>
+</div>
+<div style="float:centre;">
+<figure>
+    	<img  src="diff_dist.png" height="280" width="380"/>
+	<figcaption> HSS for different input distributions </figcaption>
+</figure>
+</div>
+<div style="float:centre;">
+<figure>
+    	<img  src="changa-HSS.png" height="280" width="380"/>
+	<figcaption> HSS for Changa, old is Histogram sort </figcaption>
+</figure>
+</div>
+</div>
+	</li>
+
+	<br> <br> 
+	<br> <br> 
+
+
+        </ul>
+
+    </div> 
+    </div> 
+-->
+  </body>
+</html>
