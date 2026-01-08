@@ -5,12 +5,13 @@ html {
     /* font-weight: normal; */
 	font-weight: 260;
     font-size: 17px;
-	max-width:850px;
+	/* max-width:4000px; */
     float: left;
 	margin: 0 auto;
 }
 body {
 	margin: 2%;
+	max-width:850px;
 	text-align: justify;
 }
 ul,ol {
@@ -27,8 +28,11 @@ h2 { font-size: 140%; }
 h3 { font-size: 130%; }
 h4 { font-size: 105%; }
 h1,h2,h3,h4 {
-	//text-align: center;
-	//font-weight: normal;
+	/* text-align: center; */
+	/* font-weight: normal; */
+}
+b,strong {
+   /* font-weight: 560; */
 }
 
 
@@ -44,6 +48,13 @@ a:active {
     background-color: hotpink;
 } 
 */
+.talks-list li {
+    /*
+    display: block; 
+    */
+    margin-bottom: 3px;
+    width: 110%;
+}
 
 a:hover {
     background-color: #e6e5ea;
