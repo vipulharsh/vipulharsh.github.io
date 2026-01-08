@@ -5,7 +5,7 @@ html {
     /* font-weight: normal; */
 	font-weight: 260;
     font-size: 17px;
-	max-width:800px;
+	max-width:850px;
     float: left;
 	margin: 0 auto;
 }
@@ -22,10 +22,10 @@ ul ul {
     margin-left: 2em;
     margin-bottom: 0;
 }
-h1 { font-size: 140%; }
-h2 { font-size: 130%; }
-h3 { font-size: 120%; }
-h4 { font-size: 110%; }
+h1 { font-size: 150%; }
+h2 { font-size: 140%; }
+h3 { font-size: 130%; }
+h4 { font-size: 105%; }
 h1,h2,h3,h4 {
 	//text-align: center;
 	//font-weight: normal;

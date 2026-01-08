@@ -32,7 +32,7 @@
 
 <div class="container" style="float:left">
 <section id = "aboutme"> 
-<h4> About Me</h4> 
+<h3> About Me</h3> 
 <p style="margin-top: -15px;"> 
 I am currently a postdoc at Conviva with the inimitable duo of <a href="https://users.ece.cmu.edu/~vsekar/">Vyas Sekar</a> and <a href="https://www.cs.cmu.edu/~hzhang/">Hui Zhang</a>, working on failure diagnosis for quality of experience issues in distributed services. 
 I graduated with a PhD from UIUC, where I was fortunate to be advised by <a href="http://pbg.cs.illinois.edu"> Brighten Godfrey</a>. My <a href="website_files/papers/phd_thesis.pdf">thesis</a> looked at fundamental techniques to diagnose failures in networked systems. 
@@ -42,10 +42,70 @@ I am broadly interested in networked and distributed systems. I like to think ab
 I currently work on <a href="http://charm.cs.illinois.edu/"> charm++</a>,  a parallel programming framework in C++, that employs virtual processors allowing the flexibility and elegance of object oriented programming . 
 I also think about algorithms.
 -->
-
 <br> <br>
+My <a href="http://sayra-ecoevol.github.io">co-pilot</a>.
+<br>
+</p>
 
-Projects: MoCE, <a href="website_files/projects/dring/index.html">DRing/Starfish</a>, <a href="website_files/projects/parsort/index.html">Parsort</a>, <a href="website_files/papers/murphy.pdf">Murphy</a>, <a href="website_files/papers/traceweaver.pdf">TraceWeaver</a>, <a href="https://arxiv.org/pdf/2305.03348.pdf">Flock</a>
+
+<h3> Projects </h3>
+ <a href="papers.html">Complete list of my papers</a>. Below are the broad research directions I have worked on:
+<!--
+I have worked on the following projects: 
+MoCE, <a href="website_files/projects/dring/index.html">DRing/Starfish</a>, <a href="website_files/projects/parsort/index.html">Parsort</a>, <a href="website_files/papers/murphy.pdf">Murphy</a>, <a href="website_files/papers/traceweaver.pdf">TraceWeaver</a>, <a href="https://arxiv.org/pdf/2305.03348.pdf">Flock</a>.
+Details below. 
+-->
+
+<h4>Failure diagnosis in networked systems </h4>
+<ul>
+	<li> MoCE: A Mixture of Context-aware Experts Framework for Troubleshooting Internet-scale Services [NSDI 2026] </li>
+    MoCE supports an ensemble of algorithms to detect various failures modes. It provides a programmatic framework for developers to easily express their RCA logic. 
+    <br> <br>
+	<li> <a href="website_files/papers/hotnets25-opportunities.pdf">Automatically Surfacing Opportunities for Improvements In Internet-Scale Applications</a> [HotNets 2025]</li>
+	<br>
+
+	 <li> <a href="website_files/papers/murphy.pdf"> Murphy: Performance Diagnosis of Distributed Cloud Applications </a> [SIGCOMM 2023] </li>
+     How do we diagnose the reasons for performance issues in cloud apps? Murphy incorporates entity relationships via a Markov Random Field (MRF) for significantly more accurate diagnosis. 
+     Also see <a href="https://blogs.vmware.com/management/2023/09/improving-cloud-network-troubleshooting-a-research-based-solution-unveiled-at-sigcomm-2023-new-york-city.html"> VMware's blog</a> for product adoption. </font>
+	<br> <br>
+
+	 <li> <a href="https://arxiv.org/pdf/2305.03348.pdf"> Flock: Accurate Network Fault Localization at Scale</a> [CoNext 2023]</li>
+     Probabilistic Graphical Models (PGMs) are the most accurate way to infer network failures, but are very slow. 
+     Flock employs new algorithms to accelerate inference via discrete PGMs, enabling accurate fault localization at scale.
+    <br> <br>
+
+</ul>
+
+<h4> Datacenter network topology </h4>
+<ul>
+	<li> Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers [NSDI 2026] </li>
+    Small-scale topologies don't respect asymptotic characteristics like expansion ratio and bisection bandwidth. Starfish demonstrates this via a design that performs well at small-scale but deteroirates at large-scale.
+	<br> <br>
+
+	<li> <a href="website_files/papers/dring.pdf"> Spineless Data centers</a> [HotNets 2020]<br> </li>
+	<br> 
+</ul>
+
+<h4> Distributed tracing </h4>
+<ul>
+	 <li> <a href="website_files/papers/traceweaver.pdf">TraceWeaver: Distributed Request Tracing for Microservices Without Application Modification</a> [SIGCOMM, 2024] </li>
+    TraceWeaver recreates request-traces using a reconstruction algorithm based on timing information, eliminating the need to instrument applications for passing request headers.
+    <br> <br>
+</ul>
+
+<h4> Large-scale parallel sorting algorithms </h4>
+<ul>
+	 <li> <a href="website_files/papers/parpart.pdf"> Optimal Round and Sample-Size Complexity for Partitioning in Parallel Sorting</a> [SPAA 2023] </li>
+     We prove lower and upper bounds for determining balanced splitters for parallel partitioning and sorting.
+	<br> <br>
+
+	 <li> <a href="website_files/papers/hss.pdf"> Histogram Sort with Sampling (HSS)</a> [SPAA 2019]</li>
+     HSS is a large-scale parallel sorting algorithm that combines sampling and histogramming. HSS is faster than alternatives, both practically and theoretically.
+	<br> <br>
+
+</ul>
+
+<p>
 
 <!--I also worked in the area of parallel computing during my Masters, when I was an  <a href="https://charm.cs.illinois.edu/gerrit/#/q/owner:%22Vipul+Harsh+%253Cvharsh2%2540illinois.edu%253E%22"> active contributor </a> to the <a href="http://charmplusplus.com/"> charm++</a> open-source project. -->
 
@@ -55,30 +115,23 @@ I finished my Masters with <a href="http://charm.cs.uiuc.edu/~kale/"> Prof. Laxm
 Check out my master thesis <a href="website_files/thesis.pdf">here</a>.
 -->
 
-
-<br> <br>
-My <a href="http://sayra-ecoevol.github.io">co-pilot</a>.
-<br>
+<p>
 <!-- I love sunshine -->
  
               </p>
       </section>
 
       
-
+<!--
 
               
 <section id="research">
 <h4> Publications </h4> 
 	<ul style="margin-top: -15px;"> 
 
-	<li> MoCE: A Mixture of Context Aware Experts Framework for Troubleshooting Internet-scale Services </li>
+	<li> MoCE: A Mixture of Context-aware Experts Framework for Troubleshooting Internet-scale Services </li>
 	<font>Vipul Harsh, Sayan Sinha, Henry Milner, B. Aditya Prakash, Vyas Sekar, Hui Zhang. </font><br>
 	<font> USENIX NSDI, May 2026.  </font>
-	<!--
-	<ul style="margin-bottom: 3px"><li><font> <a href="https://www.youtube.com/watch?v=gkz-A9BDlqU&t=14249s">Talk</a> at <a href="https://conferences.sigcomm.org/hotnets/2020/">HotNets 2020</a> </font> </li> </ul>
-	<ul style="margin-bottom: 0px"><li><font> <a href="website_files/projects/dring_slides.pdf">Slides</a>, <a href="https://github.com/netarch/DRing">Repository</a></li> </font> </li> </ul>
-	-->
 	<br> <br>
 
 	<li> Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers</li>
@@ -117,7 +170,6 @@ My <a href="http://sayra-ecoevol.github.io">co-pilot</a>.
 	 <li> <a href="https://arxiv.org/pdf/2305.03348.pdf"> Flock: Accurate Network Fault Localization at Scale</a> </li>
 	<font> Vipul Harsh, Tong Meng, Kapil Agrawal, Brighten Godfrey. </font><br>
 	<font>  ACM CoNEXT, December 2023. </font>
-	<!--<font> Conference on emerging Networking EXperiments and Technologies (CoNEXT), December 2023.  </font> -->
 
 	<br> <br>
 
@@ -135,7 +187,6 @@ My <a href="http://sayra-ecoevol.github.io">co-pilot</a>.
 	<br> 
 
 	 <li> <a href="website_files/papers/hss.pdf"> Histogram Sort with Sampling</a>
-	<!-- (<a href="website_files/projects/hss_slides.pdf">Slides</a>,  <a href="https://github.com/vipulharsh/HSS"> code</a>) -->
 	 </li>
 	<font>Vipul Harsh, Laxmikant Kale, Edgar Solomonik. </font><br>
 	<font>  ACM SPAA, June 2019.  </font> <br>
@@ -154,11 +205,11 @@ My <a href="http://sayra-ecoevol.github.io">co-pilot</a>.
 	<li> FaultFerence: Diagnosing Gray Failures via Passive Telemetry </li>
 	<font> Vipul Harsh, Rahul Bothra, Brighten Godfrey. </font><br>
 	</ul>
+-->
 
-
-<h4> Miscellaneous </h4>
+<h3> Miscellaneous </h3>
 	<ul style="margin-top: -15px;"> 
-	<li> <a href="website_files/talks/IITB- career path.pptx">Talk</a> about career paths after undergrad, invited by IITB CSE placement cell</li>
+	<li> <a href="website_files/talks/IITB- career path.pptx">Talk</a> about career paths after a CS undergrad, invited by IITB CSE placement cell</li>
     </ul> 
     </div> <!-- /container -->
     </div> <!-- /container -->
