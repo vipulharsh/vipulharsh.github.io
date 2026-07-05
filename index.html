@@ -63,19 +63,19 @@ Details below.
 <h4>Failure diagnosis in networked systems </h4>
 <ul>
 	<li> MoCE: A Mixture of Context-aware Experts Framework for Troubleshooting Internet-scale Services [NSDI 2026] </li>
-    MoCE leverages an ensemble of algorithms to detect various failures modes. It provides a programmatic framework for developers to succinctly express their RCA logic with ease using MoCE's DSL. 
+    MoCE leverages an ensemble of algorithms to detect various failures modes. It provides a programmatic framework for developers to succinctly express their RCA logic using MoCE's DSL. 
     <br> <br>
 	<li> <a href="website_files/papers/hotnets25-opportunities.pdf">Automatically Surfacing Opportunities for Improvements In Internet-Scale Applications</a> [HotNets 2025]</li>
 	<br>
 
 	 <li> <a href="website_files/papers/murphy.pdf"> Murphy: Performance Diagnosis of Distributed Cloud Applications </a> [SIGCOMM 2023] </li>
      How do we diagnose the reasons for performance issues in cloud apps? Murphy incorporates entity relationships via a Markov Random Field (MRF) for significantly more accurate diagnosis. 
-     Also see <a href="https://blogs.vmware.com/management/2023/09/improving-cloud-network-troubleshooting-a-research-based-solution-unveiled-at-sigcomm-2023-new-york-city.html"> VMware's blog</a> for product adoption. </font>
-	<br> <br>
+     <ul> <li> Also see <a href="https://blogs.vmware.com/management/2023/09/improving-cloud-network-troubleshooting-a-research-based-solution-unveiled-at-sigcomm-2023-new-york-city.html"> VMware's blog</a> for product adoption. </font> </li>  </ul>
+	<br> 
 
 	 <li> <a href="https://arxiv.org/pdf/2305.03348.pdf"> Flock: Accurate Network Fault Localization at Scale</a> [CoNext 2023]</li>
-     Probabilistic Graphical Models (PGMs) are the most accurate way to infer network failures, but are very slow. 
-     Flock employs new algorithms to accelerate inference via discrete PGMs, enabling accurate fault localization at scale.
+     Probabilistic Graphical Models (PGMs) are the most accurate way to localize network failures, but are very slow. 
+     Flock employs new algorithms to accelerate inference via discrete PGMs at datacenter scale.
     <br> <br>
 
 </ul>
@@ -83,10 +83,14 @@ Details below.
 <h4> Datacenter network topology </h4>
 <ul>
 	<li> Starfish: A Topology-Routing Co-Design for Small-Scale Data Centers [NSDI 2026] </li>
+    We propose new topologies for small scale datacenters that match the performance of expanders while being as intuitive as Clos topologies. We designed the first practical routing scheme for flat topologies, based on VRFs. 
+    <!-- 
     Small-scale topologies don't respect asymptotic characteristics like expansion ratio and bisection bandwidth. This opens up design points that may have more advantageous tradeoffs in system design.
-	<br> <br>
+    -->
+    <ul> <li> <a href="https://www.amazon.science/blog/how-flat-is-replacing-fat-in-aws-data-center-networks">Amazon announced new AWS datacenters will be based on flat topologies with VRF-based routing</a></li> 
+	<li> Earlier workshop version: <a href="website_files/papers/dring.pdf"> Spineless Data centers</a> [HotNets 2020]<br> </li>
+    </ul>
 
-	<li> <a href="website_files/papers/dring.pdf"> Spineless Data centers</a> [HotNets 2020]<br> </li>
 	<br> 
 </ul>
 

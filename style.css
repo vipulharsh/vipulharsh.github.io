@@ -21,7 +21,11 @@ ul,ol {
 ul ul {
     list-style-type: square;
     margin-left: 2em;
-    margin-bottom: 0;
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+}
+li {
+    margin-top: 0.2em;
 }
 h1 { font-size: 150%; }
 h2 { font-size: 140%; }
@@ -52,6 +56,7 @@ a:active {
     /*
     display: block; 
     */
+    margin-top: 0.2em;
     margin-bottom: 3px;
     width: 110%;
 }
