@@ -63,8 +63,42 @@ h3 {
 	margin-top: 0.5rem !important;
 }
 
+body > div[style*="float:center"] {
+	margin-left: 325px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+
+body > div[style*="float:center"] br:nth-of-type(-n+2) {
+	display: none;
+}
+
 body > div[style*="float:center"] h3 {
 	border-bottom: 0;
+}
+
+body > div[style*="float:center"] + .container {
+	margin-left: 325px;
+	padding-left: 0;
+}
+
+body > div[style*="float:center"] + .container ul {
+	width: fit-content;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+body > div[style*="float: left"] {
+	padding-right: 40px !important;
+	padding-left: 40px !important;
+}
+
+body > div[style*="float: left"] img {
+	width: 315px;
+	height: 270px;
+	object-fit: cover;
 }
 
 h4 {
@@ -118,6 +152,7 @@ a:hover {
 	body > div[style*="float:left"],
 	body > div[style*="float:center"] {
 		float: none !important;
+		margin-left: 0;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
@@ -126,12 +161,23 @@ a:hover {
 		text-align: center;
 	}
 
+	body > div[style*="float: left"] img {
+		width: min(315px, 100%);
+		height: auto;
+		aspect-ratio: 7 / 6;
+	}
+
 	body > div[style*="float:center"] br {
 		display: none;
 	}
 
 	body > div[style*="float:center"] h3 {
 		margin-top: 1.5rem;
+	}
+
+	body > div[style*="float:center"] + .container {
+		margin-left: 0;
+		padding-left: 0;
 	}
 
 	ul ul {
