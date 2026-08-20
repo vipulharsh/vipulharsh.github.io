@@ -140,6 +140,10 @@ a:hover {
 }
 
 @media (max-width: 700px) {
+	html {
+		font-size: 18px;
+	}
+
 	body {
 		margin: 0;
 		padding: 1.25rem;
